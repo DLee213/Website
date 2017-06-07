@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+  <head><!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type= "text/css" href="style.css">
+  </head>
+   <style>
+.navitem a.active {
+ background-color: #D48CF8;
+ color:#0E8044;
+}
+.navitem a {
+   display: block;
+   width: auto;
+   color: #b5E582;
+   text-decoration: none;
+   padding: 14px 16px;
+}
+.navitem {
+ text-align:center;
+ display: inline;
+ float:left;
+ border-right:1px solid white;
+}
+.navitem:last-child {
+
+}
+.navitem a:hover:not(.active) {
+  /*change the background and the text color make them contrasting*/
+  background-color: #b5E582;
+  color:#0E8044;
+}
+#main {
+ margin-top:30px;
+ padding:20px;
+}
+  </style>
+<body>
+    <!-- Begin NAvagation COde-->
+    <ul id="NavBar">
+
+    <li class="navitem"><a href="Overview.html">Overview</a></li>
+    <li class="navitem"><a href="Hobby.html">Hobby</a></li>
+    <li class="navitem"><a class="Active" href="Bonsai Art.html">Bonsai Art</a></li>
+    <li class="navitem"><a href="Dream Vacation.html">Dream Vacation</a></li>
+    <li class="navitem"><a href="Scratch Game.html">Scratch Game</a></li>
+    <li class="navitem"><a href="Python.html">Python</a></li>
+    <li class="navitem"><a href="Image Artist.html">Image Artist</a></li>
+    <li class="navitem"><a href="Filters.html">Final Project</a></li>
+
+    </ul>
+
+    <!-- End Navagation Code-->
+
+
+    <div id=main>
+<br>
+<h1>Bonsai Art Website</h1>
+
+<img src="https://d1b10bmlvqabco.cloudfront.net/attach/is1vls3kul51gr/is1wcv7m7a55el/itu7o2lt4k9y/CSE_BonaI_LeeDaniel.gif">
+ <p>var Josh = new Circle(500, 500, 200).addTo(stage)
+  .fill(gradient.linear(0, ['tomato', 'yellow']))
+  .attr('filters', new filter.DropShadow(1, 1, 5, 0x00000FF));
+
+
+
+var square1 = new Star(450,600, 40, 5);
+square1.fill('red');
+square1.addTo(stage);
+
+ square1.animate('200s', {
+  rotation: Math.PI*200
+}), {}
+
+var square2 = new Star(500,500, 40, 5);
+square2.fill('red');
+square2.addTo(stage);
+
+ square2.animate('200s', {
+  rotation: Math.PI*200
+}), {}
+
+var square3 = new Star(550,600, 40, 5);
+square3.fill('red');
+square3.addTo(stage);
+
+ square3.animate('200s', {
+  rotation: Math.PI*200
+}), {}
+
+var square4 = new Star(550,400, 40, 5);
+square4.fill('red');
+square4.addTo(stage);
+
+ square4.animate('200s', {
+  rotation: Math.PI*200
+}), {}
+
+var square5 = new Star(450,400, 40, 5);
+square5.fill('red');
+square5.addTo(stage);
+
+ square5.animate('200s', {
+  rotation: Math.PI*200
+}), {}
+
+var square7 = new Star(400,500, 40, 5);
+square7.fill('red');
+square7.addTo(stage);
+
+ square7.animate('200s', {
+  rotation: Math.PI*200
+}), {}
+
+var square6 = new Star(600,500, 40, 5);
+square6.fill('red');
+square6.addTo(stage);
+
+ square6.animate('200s', {
+  rotation: Math.PI*200
+}), {}
+
+new Circle(200, 200, 200).addTo(stage)
+  .fill(gradient.linear(0, ['tomato', 'yellow']))
+  .attr('filters', new filter.DropShadow(1, 1, 5, 0x00000FF));
+
+
+x = 200;
+y = 200;
+
+var dark = true;
+var hue = 0;
+
+function make() {
+
+  hue = hue + .005 > 1 ? 0 : hue + .005; // vary hue slightly with each star
+  var baseColor = color('red').hue(hue);
+  var c = dark ? baseColor.darker(.2) : baseColor.lighter(.3);
+  dark = !dark;
+
+  var s = new Star(x, y, 50, 9, 0).fill(c).addTo(stage);
+
+  s.animate('3s', {
+    factor: 2,
+    rotation: Math.PI / 5
+  }, {
+    easing: 'sineInOut',
+    onEnd: function() {
+      s.remove();
+    }
+  });
+
+}
+
+stage.on('tick', function(e, f) {
+  if (f % 4 === 0) { // every fourth frame
+    make();
+  }
+});
+</p>
+
+
+</div>
+</body>
+
+
+
+</html>
